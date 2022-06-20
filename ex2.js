@@ -5,13 +5,15 @@
 
 function concatenate(first, last) {
     var full;
-    full = `My name is ${first} ${last} !";
+    full = `My name is ${first} ${last} !`;//changed "  to `
+    return full; // added return to return function.
    
   }
-  getName(first, lastName) {
+  
+  getName = (firstName, lastName)=> { //same parameter name firstName
     var result;
-    result = concate(firstName, lastName);
-    console.log(result );
+    result = concatenate(firstName, lastName);//It is concatenate not concat.
+    console.log(result);
   }
-  secondFunction("Zara’, "Williams");
+  getName("Zara", "Williams");//both should have same quotes ".
   

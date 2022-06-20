@@ -7,13 +7,13 @@
 // Current Count : 4
 // Loop stopped!
 // The following code has 4 errors, find them and fix them and use node to check the output.
-const count = 0;
+let count = 0; //const variable can't be changed .
             
-            console("Starting Loop");
+            console.log("Starting Loop");//.log is missed
             do {
                console.log("Current Count : " + count);
-               count--;
+               count++; //-- leads to infinite loop
             }
             
-            then (count < 5);
-            console.log ("Loop stopped!);
+            while (count < 5); //while needs instead of then
+            console.log ("Loop stopped!"); //" is missed
